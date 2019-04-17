@@ -139,7 +139,7 @@ label{ font-weight: 600;}
     padding-right: 20px;
 }
 .login-section label.label-style-2 {
-    width: 60px;
+    width: 100px;
     margin-left: 90px;
     text-align: left;
 }
@@ -369,6 +369,9 @@ a.reset-password {
 @media screen and (max-width: 960px){
     .wrapper{
         width: 100% !important;
+    }
+    .login-section label.label-style-2 {
+        width: 60px;
     }
     .alert p strong{
         line-height: 2;
