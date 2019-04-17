@@ -1,0 +1,505 @@
+.content-section.login-page {
+    background: #003959;
+    padding: 50px 0;
+}
+.content-section.login-page>.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 0;
+}
+.section-header .page-title {
+    float: none;
+    text-align: center;
+    height: 75px;
+    line-height: 70px;
+    font-weight: 300;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 2em;
+}
+.section-header .logo {
+    float: left;
+    margin-top: 18px;
+}
+.login-page .section-header {
+    height: 78px;
+    margin-bottom: 0;
+}
+.section-header {
+    border-bottom: solid 1px #ddd;
+    height: 75px;
+    position: relative;
+    padding: 0 35px;
+}
+.logo {
+    display: block;
+    float: left;
+    width: 125px;
+    height: 60px;
+    background: url(../../assets/images/sbi-card-logo.png) left center no-repeat;
+    text-indent: -9000px;
+}
+.login-page h1 span {
+    display: block;
+    margin: -20px 0 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 600;
+    color: #888;
+}
+.section-wrapper.clearfix.login-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.login-page .section-wrapper .column {
+    padding: 40px 0;
+}
+section.left.column {
+    width: 50%;
+    border-right: solid 1px #ddd;
+}
+section.right.column{
+    width: 49%;
+}
+.form-field-list li>.field-wrap, .form-field-list li>label {
+    display: inline-block;
+}
+li.row.form-links .field-wrap {
+    display: block !important;
+    margin: 10px 0;
+    padding-left: 90px;
+}
+.login-page .alert {
+    background: #d8d8d8;
+}
+.alert p {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    color: #82807a;
+    font-weight: 400;
+    height: 50px;
+}
+.alert p strong {
+    color: #333;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+input[type=password],
+input[type=text], input[type=time] {
+    border: 1px solid #cdcbcb;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #666;
+    padding: 8px 9px;
+    height: 20px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.form-field-list .row {
+    margin: 0 0 7px;
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+}
+ .form-field-list li .field-wrap input[type=password],
+ .form-field-list li .field-wrap input[type=text] {
+    width: 180px;
+    background: #fbfbfb;
+    outline: none !important;
+}
+.login-page .left .form-field-list .row .fancy-checkbox {
+    display: block;
+    width: 200px;
+}
+.login-page .left .form-field-list .row .fancy-checkbox em {
+    display: block;
+    font-family: 'Open Sans',sans-serif;
+    font-style: normal;
+    color: #ccc;
+    font-weight: 400;
+    font-size: 11px;
+    margin-left: 26px;
+    line-height: 13px;
+}
+label{ font-weight: 600;}
+.login-page label.label-style-2 {
+    width: 100px;
+    padding-right: 20px;
+}
+.login-section label.label-style-2 {
+    width: 60px;
+    margin-left: 90px;
+    text-align: left;
+}
+@media screen and (device-width: 1280px) and (orientation: landscape){
+    .login-btn-wrap {
+        padding-top: 10px;
+    }
+}
+.button {
+    display: inline-block;
+    height: 15px;
+    line-height: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 11px 20px;
+    border: none;
+    outline: 0;
+}
+input.button {
+    height: auto;
+}
+.button.primary {
+    background: #0095d9;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #0095d9;
+}
+a.reset-password {
+    font-size: 12px;
+}
+
+
+
+.button.primary {
+    background: #0095d9;
+    color: #fff;
+}
+
+#keyboard {
+    margin: 0;
+    padding: 0 30px;
+    list-style: none;
+    text-align: center;
+}
+#keyboard .off{
+    display: inline-block;
+}
+#keyboard .on{
+    display: none;
+}
+#keyboard.shift-on .off{
+    display: none !important;
+}
+#keyboard.shift-on .on{
+    display: inline-block;
+}
+#keyboard li.divider {
+    border: none;
+    display: block;
+    clear: both;
+    background: 0 0;
+    height: 10px;
+}
+#keyboard .backspace, #keyboard .clear {
+    width: 80px;
+}
+#keyboard .right-shift {
+    width: 109px;
+}
+#keyboard li {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #b2dff4;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #d1d1d1;
+}
+#keyboard.active li {
+    border: 1px solid #0095d9;
+    color: #333;
+    cursor: pointer;
+}
+
+.flex-boxes h2, .section-heading {
+    font: 24px/30px 'Open Sans',sans-serif;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    margin: 0;
+}
+.login-page .help-links {
+    padding: 5px 0 100px;
+    background: url(../../assets/images/login-help-bg.jpg) 0 0/cover no-repeat;
+}
+.flex-boxes .wrapper {
+    text-align: center;
+    max-width: 960px;
+    margin: 40px auto;
+}
+.flex-boxes-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 33px 0 0;
+}
+.help-links .box {
+    border: none;
+    padding: 15px 22px;
+    width: 24.2%;
+    height: 200px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    float: none;
+    vertical-align: top;
+}
+.help-links .box.col-1 {
+    border-right: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+}
+.help-links .flex-boxes-container div:nth-child(4n+4) {
+    border: none;
+}
+.help-links .box h3 a {
+    color: #333;
+    cursor: inherit;
+}
+.flex-boxes-container .box h3 {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333;
+    margin: 0;
+}
+.flex-boxes-container .box {
+    text-align: center;
+    float: none;
+    display: inline-block;
+    margin: 0 3px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+.help-links .box p {
+    color: #000;
+    font-size: 12px;
+    height: 82px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin-top: 14px;
+}
+
+.flex-boxes p, .section-description {
+    font: 13px/16px 'Open Sans',sans-serif;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+.img-icon {
+    background: url(../../assets/images/sprite.png) no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.img-icon.frst-tm-user, .img-icon.help {
+    background-position: -200px -280px;
+}
+.app-widget .nav {
+    margin: 15px auto 0;
+    overflow: hidden;
+    background: #fafafa;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    width: 665px;
+    border: 1px solid #e6e6e6;
+    border-bottom: none;
+    padding: 15px 20px 30px;
+}
+
+.login-footer {
+    background: #101010;
+    margin: 20px auto 0;
+    color: #eee;
+    font-size: 13px;
+    padding: 2% 3%;
+    text-align: center;
+}
+.login-footer p {
+    margin: 0;
+    line-height: 25px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+.foot_btmtxt {
+    display: block;
+    color: #fff;
+    line-height: 25px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.login-footer p a {
+    color: #bbb;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+@media screen and (max-width: 960px){
+    .wrapper{
+        width: 100% !important;
+    }
+    .alert p strong{
+        line-height: 2;
+    }
+    .alert p {
+        padding: 10px 30px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 768px){
+    .desktop-only{
+        display: none !important;
+    }
+    .login-page .section-header {
+        height: auto;
+        padding: 0 20px;
+    }
+    .section-header .logo {
+        margin-top: 8px;
+    }
+
+    form#login-form {
+        /* width: 320px; */
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .form-field-list li > .field-wrap, .form-field-list li > label {
+        display: block !important;
+    }
+
+    .form-field-list li .field-wrap input[type=password],
+    .form-field-list li .field-wrap input[type=text] {
+       width: 90% !important;
+   }
+    .login-section label.label-style-2 {
+        margin: 0px !important;
+    }
+    li.row.form-links .field-wrap {
+       padding-left: 0px;
+    }
+    .alert p {
+        height: auto;
+        padding: 30px;
+    }
+    .alert p strong {
+        line-height: 2;
+    }
+
+    .help-links .grid.box.col-1 {
+        width: 50%;
+        margin: 0;
+    }
+    .app-widget .nav {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 550px){
+    .section-header h1,
+    .section-header .logo{
+        float: none !important;
+        font-size: 1.7em !important;
+        width: 100% !important;
+        text-align: left !important;
+    }
+    section.right.column{
+        display: none;
+    }
+    section.left.column{
+        width: 100%;
+        border-right: none;
+    }
+    .help-links .grid.box.col-1 {
+        width: 50%;
+        margin: 0;
+    }
+    li.row.form-links .field-wrap {
+       padding-left: 0px;
+    }
+    .alert p {
+        height: auto;
+        padding: 20px;
+    }
+    .app-widget .nav li {
+        width: 50%;
+        text-align: center;
+        margin: 10px;
+    }
+    ul.store-links {
+        width: 170px;
+        margin: 0 auto;
+    }
+}
+.login-page .app-widget {
+    display: block;
+    position: relative;
+    margin-top: -118px;
+}
+.app-widget .nav li a {
+    display: block;
+    text-align: left;
+    text-indent: -9000px;
+}
+.app-widget .nav li {
+    display: inline-block;
+    vertical-align: middle;
+}
+.app-widget .nav li+li {
+    padding: 3px 4% 3px 0;
+    height: 30px;
+    border-left: none;
+}
+.app-widget .nav li:first-child {
+    margin-right: 2%;
+}
+.app-widget .nav .app-icon {
+    width: 130px;
+    height: 56px;
+    position: relative;
+}
+.app-widget .nav li .appstore {
+    background: url(../../assets/images/app-store.png) no-repeat;
+    width: 135px;
+    height: 40px;
+}
+.app-widget .nav li .playstore {
+    background: url(../../assets/images/google-app.png) no-repeat;
+    width: 135px;
+    height: 40px;
+}
+.app-widget .nav li .send-link-to-phone {
+    background: url(../../assets/images/send-link-to-phone.png) no-repeat;
+    width: 135px;
+    height: 40px;
+}

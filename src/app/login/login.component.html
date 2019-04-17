@@ -1,0 +1,200 @@
+<section class="content-section login-page">
+  <div class="wrapper">
+    <header class="section-header">
+      <a href="/creditcards/app/user/login" class="logo">SBICard</a>
+      <h1 class="page-title">Welcome to SBI Card Online
+        <span class="desktop-only">Enter your User ID and Password to Log In</span>
+      </h1>
+    </header>
+    <div class="section-wrapper clearfix login-section">
+      <section class="left column">
+        <form id="login-form" action="/creditcards/validateLogin" method="POST" autocomplete="off"
+          novalidate="novalidate">
+          <ul class="form-field-list">
+            <li class="row">
+              <label class="label-style-2" for="userid">User ID</label>
+              <div class="field-wrap">
+                <input type="text" name="username" id="userid" maxlength="40" class="virutal-keys valid" value=""
+                  autocomplete="off" autofocus="autofocus" aria-required="true" aria-invalid="false"><label for="userid"
+                  class="error valid" style="display: inline;"></label>
+              </div>
+            </li>
+            <li class="row">
+              <label class="label-style-2" for="password">Password</label>
+              <div class="field-wrap">
+                <input name="password0" style="display: none;" type="password" value="oHbsQ6TK3T10FMPn">
+                <input type="password" name="password" id="password" maxlength="16"
+                  class="virutal-keys visible-password" autocomplete="new-password">
+                <input name="password1" style="display: none;" type="password" value="oHbsQ6TK3T10FMPn">
+              </div>
+            </li>
+            <li class="row hide-mobile">
+              <label class="label-style-2"></label>
+              <div class="field-wrap">
+                <label class="fancy-checkbox">
+                  <input type="checkbox" name="virtual" id="virtual" (change)="keyboardChange()"><span class="check-toggle"></span>
+                  Use Virtual Keyboard <em>For Secure Login (recommended)</em>
+                </label>
+              </div>
+            </li>
+            <li class="row login-btn-wrap">
+              <label class="label-style-2"></label>
+              <input type="submit" id="login-submit-button" class="button primary" value="Login">
+            </li>
+
+            <li class="row form-links">
+              <div class="field-wrap">
+                <a href="#" class="reset-password forget-password">Forgot your User ID or Password?</a>
+              </div>
+              <div class="field-wrap first-timeUser">
+                <a href="#" class="reset-password first-time-user">First time user?</a>
+              </div>
+              <div class="field-wrap">
+                <a href="#" class="reset-password unlock-account">User ID Locked?</a>
+              </div>
+              <div class="field-wrap">
+                <a href="#" class="reset-password video-wrap playVideo" data-video-id="K2X2FilxGYo">Demo Video for
+                  Register/Login</a>
+              </div>
+            </li>
+          </ul>
+        </form>
+      </section>
+      <section class="right column hide-mobile">
+        <ul id="keyboard" [ngClass]="boardChange ? 'active' : ''" [ngClass]="keyChange ? 'shift-on' : ''">
+          <li class="symbol"><span class="off">4</span><span class="on">$</span></li>
+          <li class="symbol"><span class="off">6</span><span class="on">^</span></li>
+          <li class="symbol"><span class="off">3</span><span class="on">#</span></li>
+          <li class="symbol"><span class="off">2</span><span class="on">@</span></li>
+          <li class="symbol"><span class="off">5</span><span class="on">%</span></li>
+          <li class="symbol"><span class="off">`</span><span class="on">~</span></li>
+          <li class="symbol"><span class="off">1</span><span class="on">!</span></li>
+          <li class="symbol"><span class="off">9</span><span class="on">(</span></li>
+          <li class="symbol spcl"><span class="off">7</span><span class="on">&amp;</span></li>
+          <li class="symbol"><span class="off">8</span><span class="on">*</span></li>
+          <li class="symbol"><span class="off">0</span><span class="on">)</span></li>
+          <li class="symbol"><span class="off">'</span><span class="on">"</span></li>
+          <li class="symbol"><span class="off">=</span><span class="on">+</span></li>
+          <li class="symbol"><span class="off">/</span><span class="on">?</span></li>
+          <li class="symbol"><span class="off">.</span><span class="on">,</span></li>
+          <li class="symbol"><span class="off">-</span><span class="on">_</span></li>
+          <li class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>
+          <li class="right-shift" (click)="vCharChange()">shift</li>
+          <li class="backspace">Back</li>
+          <li class="clear">Clear All</li>
+          <li class="divider"></li>
+          <li class="letter">w</li>
+          <li class="letter">o</li>
+          <li class="letter">d</li>
+          <li class="letter">t</li>
+          <li class="letter">r</li>
+          <li class="letter">e</li>
+          <li class="letter">a</li>
+          <li class="letter">q</li>
+          <li class="letter">k</li>
+          <li class="letter">l</li>
+          <li class="letter">b</li>
+          <li class="letter">u</li>
+          <li class="letter">g</li>
+          <li class="letter">i</li>
+          <li class="letter">c</li>
+          <li class="letter">f</li>
+          <li class="letter">v</li>
+          <li class="letter">j</li>
+          <li class="letter">z</li>
+          <li class="letter">h</li>
+          <li class="letter">n</li>
+          <li class="letter">m</li>
+          <li class="letter">s</li>
+          <li class="letter">y</li>
+          <li class="letter">x</li>
+          <li class="letter">p</li>
+        </ul>
+      </section>
+    </div>
+    <div class="alert">
+      <p>If you suspect fraudulent activity in your account call our <strong>24-hour</strong> help line on <strong>39 02
+          02 02</strong> (prefix local STD code),<strong>1860 180 1290</strong> immediately.</p>
+    </div>
+    <section class="flex-boxes help-links content-section">
+      <div class="wrapper grid-outer">
+        <h2 class="section-heading">Allow us to help you</h2>
+        <section class="flex-boxes-container grid-outer">
+          <div class="grid box col-1">
+            <div class="content-box">
+              <h3>
+                <a id="firstUserId" href="#">First Time User</a>
+              </h3>
+              <p>
+                Access your online SBI Card account, anywhere, anytime. Register yourself at SBICard.com in 3 simple
+                steps.
+              </p>
+              <a id="learnMore" class="learn-more" href="#">Register now</a>
+            </div>
+          </div>
+          <div class="grid box col-1">
+            <div class="content-box">
+              <h3>
+                <a onclick="setAnalyticsPost('Security Tips');" id="securityTipsId" href="#">Security Tips</a>
+              </h3>
+              <p>Your credit card is important. Ensure safe usage of your SBI Card at every step.</p>
+              <a class="img-icon learn-more" id="securityTipsLearnMoreId" href="#">Learn more</a>
+
+            </div>
+          </div>
+          <div class="grid box col-1">
+            <div class="content-box">
+              <h3>
+                <a onclick="setAnalyticsPost('View Demo');" id="viewDemoId" href="#" target="_blank">View Demo</a>
+              </h3>
+              <p>Watch the demo to know more about how to book different products and services on <a
+                  id="viewdemosbicardId" href="#">SBICard.com</a></p>
+              <a class="learn-more" id="viewDemoLinkId" href="#" target="_blank">View Demo</a>
+            </div>
+          </div>
+          <div class="grid box col-1">
+            <div class="content-box">
+              <h3>
+                <a id="applyFlexipayId" href="#">Apply for Flexipay</a>
+              </h3>
+              <p>Make big purchases and pay them back in easy EMIs. You can convert your transactions above Rs. 2,500
+                into Flexipay within 30 days of purchase.</p>
+              <a id="applyFlexipayLearnMoreId" class="learn-more" href="#">Apply Now</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section class="gray-bg">
+      <div class="wrapper">
+        <section class="gray-bg">
+          <div class="wrapper">
+            <article class="app-widget">
+              <nav class="nav">
+                <ul class="store-links">
+                  <li>
+                    <div class="app-icon">
+                      <img src="../../assets/images/app-solutely-simple.png">
+                    </div>
+                  </li>
+                  <li><a href="#" class="appstore" target="_blank">Apple's App Store </a></li>
+                  <li><a href="#" class="playstore" target="_blank">Google's Play Store </a></li>
+                  <li><a href="" class="send-link-to-phone">Send link to phone</a></li>
+                </ul>
+              </nav>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
+  <footer class="login-footer">
+    
+    <p>© <span id="year">2019</span> | <a href="#" id="termsconditionId">Most Important Terms &amp; Conditions</a> |
+      <a href="#" id="privacyPolicyId">Privacy Policy</a> |
+      <a href="#" id="disclaimerId">Disclaimer</a> |
+      <a href="#" id="tncID">Terms &amp; Conditions</a> |
+      <a href="#" id="offerTnCId">Offer Terms &amp; Conditions</a>
+    </p>
+  </footer>
+</section>
