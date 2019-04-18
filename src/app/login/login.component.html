@@ -61,7 +61,7 @@
         </form>
       </section>
       <section class="right column hide-mobile">
-        <ul id="keyboard" [ngClass]="boardChange ? 'active' : ''" [ngClass]="keyChange ? 'shift-on' : ''">
+        <ul id="keyboard" [ngClass]="{'shift-on' : keyChange, 'active' : boardChange}">
           <li class="symbol"><span class="off">4</span><span class="on">$</span></li>
           <li class="symbol"><span class="off">6</span><span class="on">^</span></li>
           <li class="symbol"><span class="off">3</span><span class="on">#</span></li>
