@@ -444,8 +444,14 @@ a.reset-password {
     }
     .help-links .grid.box.col-1 {
         width: 50%;
-        margin: 0;
+        margin: 0 0 30px;
     }
+
+    .help-links .box p{
+        margin-bottom: 0;
+    }
+
+    
     li.row.form-links .field-wrap {
        padding-left: 0px;
     }
