@@ -316,13 +316,12 @@ a.reset-password {
     margin: 0;
 }
 
-.img-icon {
-    background: url(../../assets/images/sprite.png) no-repeat;
-    width: 32px;
+.help-links .img-icon {
     height: 32px;
+    margin-bottom: 15px;
 }
-.img-icon.frst-tm-user, .img-icon.help {
-    background-position: -200px -280px;
+.help-links .grid.box.col-1:last-child .img-icon {
+    height: 26px;
 }
 .app-widget .nav {
     margin: 15px auto 0;
